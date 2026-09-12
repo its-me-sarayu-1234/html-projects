@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Biography Page</title>
+</head>
+
+<body>
+
+    <h1>Mini Biography:Ariana Grande-Butera</h1>
+    <p>Ariana Grande-Butera is one of the biggest globally known pop stars, singer/songwriter and actresses. </p>
+
+    <h2>Early Life</h2>
+    <p>She was born in italy and grew up with curiosity, discipline, and love for singing.</p>
+    
+
+    <h2>Important Achievement</h2>
+    <p>She played a <strong>major role in her music career</strong>.</p>
+    <p>She is remembered as the <em>People’s Artist</em> because she inspired millions of fans.</p>
+    <p>One value that made her special was <mark>perseverance</mark>.</p>
+
+    <h2>Correction Corner</h2>
+    <p><s>She only worked as a singer.</s> She was also an actress and songwriter.</p>
+
+    
+
+    <h2>Words That Inspire</h2>
+    <p>She once said, <q>Dream, dream, dream.</q></p>
+    <blockquote>
+        Dreams transform into thoughts and thoughts result in action.
+    </blockquote>
+
+    <h3>My Reflection</h3>
+    <p>I admire Ariana Grande-Butera because she showed that talent, dedication, and hard work can change lives.</p>
+
+</body>
+
+</html>
