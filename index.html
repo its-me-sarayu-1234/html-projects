@@ -1,11 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rocket mission</title>
+  <meta charset="UTF-8">
+  <title>Doctor Appointment</title>
 </head>
 <body>
-<center><h1>Welcome to the Rocket Mission</h1></center>
+
+  <h1>Doctor Appointment</h1>
+
+  <p>Welcome to your doctor appointment webpage!</p>
+
 </body>
 </html>
+
+<h1>Doctor Appointment 📅</h1>
+<p>Please fill out the form below to schedule your appointment.</p>
+<hr>
+
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  <br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <br><br>
+  <label for="date">Date:</label>
+  <input type="date" id="date" name="date" required>
+  <br><br>
+  <label for="time">Time:</label>
+  <input type="time" id="time" name="time" required>
+  <br><br>
+  <label for="doctor">Select Doctor:</label>
+  <select id="doctor" name="doctor" required>
+    <option value="">--Please choose an option--</option>
+    <option value="dr_smith">Dr. Smith</option>
+    <option value="dr_jones">Dr. Jones</option>
+    <option value="dr_brown">Dr. Brown</option>
+  </select>
+  <br><br>
+  <label for="reason">Reason for Appointment:</label>
+  <textarea id="reason" name="reason" rows="4" cols="50" required></textarea>
+  <br><br>
+  <label for="insurance">Insurance Provider:</label>
+  <input type="text" id="insurance" name="insurance" required>
+  <br><br>
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required>
+  <br><br>
+  <label for="notes">Additional Notes:</label>
+  <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
+  <br><br>
+  <label for="reminder">Would you like to receive a reminder?</label>
+  <input type="checkbox" id="reminder" name="reminder">
+  <br><br>
+  <input type="submit" value="Schedule Appointment">
+</form>
+
+<label for="language">Preferred Language:</label>
+<select id="language" name="language" required>
+  <option value="">--Please choose an option--</option>
+  <option value="english">English</option>
+  <option value="spanish">Spanish</option>
+  <option value="french">French</option>
+  <option value="german">German</option>
+  <option value="chinese">Chinese</option>
+  <option value="japanese">Japanese</option>
+  <option value="hindi">Hindi</option>
+  <option value="arabic">Arabic</option>
+  <option value="portuguese">Portuguese</option>
+  <option value="russian">Russian</option>
+  <option value="italian">Italian</option>
+  <option value="korean">Korean</option>
+  <option value="vietnamese">Vietnamese</option>
+  <option value="thai">Thai</option>
+  <option value="turkish">Turkish</option>
+  <option value="dutch">Dutch</option>
+  <option value="swedish">Swedish</option>
+  <option value="norwegian">Norwegian</option>
+  <option value="danish">Danish</option>
+  <option value="finnish">Finnish</option>
+  <option value="polish">Polish</option>
+  <option value="greek">Greek</option>
+  <option value="hebrew">Hebrew</option>
+  <option value="indonesian">Indonesian</option>
+  <option value="malay">Malay</option>
+  <option value="filipino">Filipino</option>
+  <option value="swahili">Swahili</option>
+  <option value="other">Other</option>
+</select>
+
+<a href="https://www.youtube.com/watch?v=WG6l65fGMn4">Click here to watch the video on YouTube</a>
+
+<label>why are you visiting?</label><br>
+<input type="radio" id="checkup" name="visit_reason" value="checkup">
+<label for="checkup">Routine Checkup</label><br>
+<input type="radio" id="illness" name="visit_reason" value="illness">
+<label for="illness">Illness</label><br>
+<input type="radio" id="injury" name="visit_reason" value="injury">
+<label for="injury">Injury</label><br>
+
