@@ -1,100 +1,216 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Doctor Appointment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Food and Nutrition Blog</title>
 </head>
+
 <body>
 
-  <h1>Doctor Appointment</h1>
+    <header>
+        <h1>Healthy Bites: Food and Nutrition Blog</h1>
 
-  <p>Welcome to your doctor appointment webpage!</p>
+        <nav>
+            <a href="#healthy-plate">Healthy Plate</a> |
+            <a href="#nutrition-tips">Nutrition Tips</a> |
+            <a href="#video">Watch Video</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="healthy-plate">
+            <h2>Building a Healthy Plate</h2>
+
+            <article>
+                <h3>Why a Balanced Meal Matters</h3>
+
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=300&h=200&fit=crop"
+                        alt="A balanced meal plate with fruits, vegetables, grains, and protein" width="300"
+                        height="200">
+                    <figcaption>
+                        A balanced plate includes fruits, vegetables, grains, protein, and water.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    A healthy plate gives our body the energy it needs to study, play, think, and grow.
+                    It should include colourful fruits, fresh vegetables, grains, and protein-rich food.
+                </p>
+
+                <p>
+                    Learn more about healthy eating here:
+                    <a href="https://www.myplate.gov/" target="_blank">
+                        MyPlate Nutrition Guide
+                    </a>
+                </p>
+            </article>
+
+            <article>
+                <h3>Smart Snack Choices</h3>
+
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=300&h=200&fit=crop"
+                        alt="Healthy snacks and fresh food ingredients" width="300" height="200">
+                    <figcaption>
+                        Healthy snacks can include fruits, nuts, yoghurt, or homemade food.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Snacks can be healthy when we choose foods that give energy instead of only sugar.
+                    Fruits, nuts, sprouts, and yoghurt are better choices than chips and sugary drinks.
+                </p>
+
+                <p>
+                    Explore more nutrition facts here:
+                    <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet" target="_blank">
+                        WHO Healthy Diet Guide
+                    </a>
+                </p>
+            </article>
+        </section>
+
+        <section id="nutrition-tips">
+            <h2>Nutrition Tips for Students</h2>
+
+            <article>
+                <h3>Drink Enough Water</h3>
+
+                <p>
+                    Water helps the body stay active, supports digestion, and keeps the brain focused.
+                    Students should carry a water bottle and drink water throughout the day.
+                </p>
+            </article>
+
+            <article>
+                <h3>Eat Colourful Food</h3>
+
+                <p>
+                    Different colours in fruits and vegetables give different nutrients. A colourful plate
+                    often means a healthier plate.
+                </p>
+
+                <p>
+                    Read more about healthy food choices here:
+                    <a href="https://www.nutrition.gov/" target="_blank">
+                        Nutrition.gov
+                    </a>
+                </p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Quick Nutrition Note</h2>
+
+            <div>
+                <p>
+                    Try this simple rule: fill half your plate with fruits and vegetables, one quarter with
+                    grains, and one quarter with protein.
+                </p>
+
+                <p>
+                    Share your healthy recipe here:
+                    <a href="https://forms.gle/" target="_blank">
+                        Recipe Submission Form
+                    </a>
+                </p>
+            </div>
+        </aside>
+
+        <section id="video">
+            <h2>Watch and Learn About Nutrition</h2>
+
+            <p>
+                Watch this video to understand how food choices can support a healthy lifestyle.
+            </p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xyQY8a-ng6g" title="Nutrition Video"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section id="contact">
+            <h2>Contact the Nutrition Blog Team</h2>
+
+            <p>
+                Have a healthy recipe or food tip to share? Send it to us.
+            </p>
+
+            <p>
+                Email:
+                <a href="mailto:nutritionblog@example.com">
+                    nutritionblog@example.com
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Healthy Bites Food and Nutrition Blog. All rights reserved.</p>
+
+        <p>
+            Learn more about healthy habits:
+            <a href="https://www.nutrition.gov/" target="_blank">
+                Nutrition.gov
+            </a>
+        </p>
+    </footer>
+
+    <p>
+        <a href="https://www.cdc.gov/healthyweight/healthy_eating/index.html" target="_blank">
+            CDC Healthy Eating Guide
+        </a>
+    </p>
+    the CDC Healthy Eating Guide provides tips and resources for maintaining a balanced diet and healthy lifestyle.
 
 </body>
 
-<h1>Doctor Appointment 📅</h1>
-<p>Please fill out the form below to schedule your appointment.</p>
-<hr>
+<h1>Facts on Healthy Eating, lifestyle and exercise</h1>
 
-<form>
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required>
-  <br><br>
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-  <br><br>
-  <label for="date">Date:</label>
-  <input type="date" id="date" name="date" required>
-  <br><br>
-  <label for="time">Time:</label>
-  <input type="time" id="time" name="time" required>
-  <br><br>
-  <label for="doctor">Select Doctor:</label>
-  <select id="doctor" name="doctor" required>
-    <option value="">--Please choose an option--</option>
-    <option value="dr_smith">Dr. Smith</option>
-    <option value="dr_jones">Dr. Jones</option>
-    <option value="dr_brown">Dr. Brown</option>
-  </select>
-  <br><br>
-  <label for="reason">Reason for Appointment:</label>
-  <textarea id="reason" name="reason" rows="4" cols="50" required></textarea>
-  <br><br>
-  <label for="insurance">Insurance Provider:</label>
-  <input type="text" id="insurance" name="insurance" required>
-  <br><br>
-  <label for="phone">Phone Number:</label>
-  <input type="tel" id="phone" name="phone" required>
-  <br><br>
-  <label for="notes">Additional Notes:</label>
-  <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
-  <br><br>
-  <label for="reminder">Would you like to receive a reminder?</label>
-  <input type="checkbox" id="reminder" name="reminder">
-  <br><br>
-  <input type="submit" value="Schedule Appointment">
-</form>
+<li>Healthy eating is essential for maintaining overall health and well-being.</li>
+<li>Incorporating a variety of fruits, vegetables, whole grains, and lean proteins into your diet can help prevent chronic diseases and promote longevity.</li>
+<li>Regular physical activity, combined with a balanced diet, is crucial for maintaining a healthy weight and reducing the risk of obesity-related conditions.</li>
+<li>Staying hydrated by drinking plenty of water is important for digestion, circulation, and temperature regulation.</li>
+<li>Limiting the intake of processed foods, added sugars, and saturated fats can contribute to better heart health and overall wellness.</li>
+<li>Mindful eating practices, such as paying attention to hunger and fullness cues, can help prevent overeating and promote a healthier relationship with food.</li>
+<li>Consulting with a registered dietitian or nutritionist can provide personalized guidance and support for achieving specific health and nutrition goals.</li>
+<li>Incorporating regular exercise, such as walking, jogging, or strength training, can enhance physical fitness, improve mood, and boost energy levels.</li>
+<li>Getting adequate sleep is essential for overall health, as it supports cognitive function, immune system health, and emotional well-being.</li>
+<li>Maintaining a balanced lifestyle that includes healthy eating, regular exercise, and stress management can lead to improved quality of life and overall well-being.</li>
+<li> Engaging in social activities and building strong relationships can positively impact mental health and contribute to a sense of community and support.</li>
+<li> Practicing stress-reducing techniques, such as meditation, deep breathing exercises, or yoga, can help manage stress levels and promote relaxation.</li>
+<li> Regular health check-ups and screenings can help detect potential health issues early and allow for timely intervention and treatment.</li>
 
-<label for="language">Preferred Language:</label>
-<select id="language" name="language" required>
-  <option value="">--Please choose an option--</option>
-  <option value="english">English</option>
-  <option value="spanish">Spanish</option>
-  <option value="french">French</option>
-  <option value="german">German</option>
-  <option value="chinese">Chinese</option>
-  <option value="japanese">Japanese</option>
-  <option value="hindi">Hindi</option>
-  <option value="arabic">Arabic</option>
-  <option value="portuguese">Portuguese</option>
-  <option value="russian">Russian</option>
-  <option value="italian">Italian</option>
-  <option value="korean">Korean</option>
-  <option value="vietnamese">Vietnamese</option>
-  <option value="thai">Thai</option>
-  <option value="turkish">Turkish</option>
-  <option value="dutch">Dutch</option>
-  <option value="swedish">Swedish</option>
-  <option value="norwegian">Norwegian</option>
-  <option value="danish">Danish</option>
-  <option value="finnish">Finnish</option>
-  <option value="polish">Polish</option>
-  <option value="greek">Greek</option>
-  <option value="hebrew">Hebrew</option>
-  <option value="indonesian">Indonesian</option>
-  <option value="malay">Malay</option>
-  <option value="filipino">Filipino</option>
-  <option value="swahili">Swahili</option>
-  <option value="other">Other</option>
-</select>
+<h1>References</h1>
+<ul>
+    <li>Centers for Disease Control and Prevention (CDC). (2021). Healthy Eating. Retrieved from <a
+            href="https://www.cdc.gov/healthyweight/healthy_eating/index.html" target="_blank">https://www.cdc.gov/healthyweight/healthy_eating/index.html</a></li>
+    <li>Harvard T.H. Chan School of Public Health. (2021). The Nutrition Source: Healthy Eating Plate. Retrieved from <a
+            href="https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/" target="_blank">https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/</a></li>
+    <li>World Health Organization (WHO). (2020). Healthy Diet. Retrieved from <a
+            href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet" target="_blank">https://www.who.int/news-room/fact-sheets/detail/healthy-diet</a></li>
+    <li>National Institutes of Health (NIH). (2021). Nutrition and Your Health: Dietary Guidelines for Americans. Retrieved from <a
+            href="https://www.nhlbi.nih.gov/health-topics/nutrition" target="_blank">https://www.nhlbi.nih.gov/health-topics/nutrition</a></li>
+    <li>American Heart Association. (2021). Healthy Eating for a Healthy Heart. Retrieved from <a
+            href="https://www.heart.org/en/healthy-living/healthy-eating" target="_blank">https://www.heart.org/en/healthy-living/healthy-eating</a></li>
+</ul>
 
-<a href="https://www.youtube.com/watch?v=LznzElgHjG0">Click here to watch the video on YouTube</a>
+<p>The U.S. Department of Agriculture (USDA) provides comprehensive guidelines on healthy eating and nutrition. Their dietary guidelines emphasize the importance of a balanced diet rich in fruits, vegetables, whole grains, and lean proteins while limiting the intake of added sugars, saturated fats, and sodium. These guidelines are updated every five years based on the latest scientific evidence and are designed to promote optimal health and prevent chronic diseases.</p>
 
-<label>why are you visiting?</label><br>
-<input type="radio" id="checkup" name="visit_reason" value="checkup">
-<label for="checkup">Routine Checkup</label><br>
-<input type="radio" id="illness" name="visit_reason" value="illness">
-<label for="illness">Illness</label><br>
-<input type="radio" id="injury" name="visit_reason" value="injury">
-<label for="injury">Injury</label><br>
-<html>
+<p>70% of adults in the United States meet the federal guidelines for healthy eating. Most of the adults report consuming a diet that is low in saturated fats and added sugars results in better health outcomes and reduced risk of chronic diseases.</p>
+
+    <h2>Additional Resources</h2>
+    <ul>
+        <li><a href="https://www.choosemyplate.gov/" target="_blank">ChooseMyPlate.gov</a> - A resource from the USDA that provides practical information on building a healthy plate and making nutritious food choices.</li>
+        <li><a href="https://www.nutrition.gov/" target="_blank">Nutrition.gov</a> - A comprehensive resource for nutrition information, including dietary guidelines, meal planning tips, and healthy recipes.</li>
+        <li><a href="https://www.eatright.org/" target="_blank">EatRight.org</a> - The Academy of Nutrition and Dietetics offers evidence-based nutrition information and resources for individuals and families.</li>
+    </ul>
+
+    \
+    <a href="https://www.youtube.com/watch?v=SwVELa8Nhzk" target="_blank">Watch this video</a> for entertainment.
