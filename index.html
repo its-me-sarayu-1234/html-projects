@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
+    <title>My Colour Card</title>
+
+    <style>
+        /* Universal Selector - applies to everything on the page */
+        * {
+            font-size: 16px;
+        }
+
+        /* Element Selectors */
+        body {
+            background-color: lemonchiffon;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkorange;
+        }
+
+        p {
+            color: darkred;
+        }
+
+        /* Class Selector */
+        .my-detail {
+            color: darkgreen;
+            font-weight: bold;
+        }
+
+        /* ID Selector */
+        #my-card {
+            background-color: lightturquoise;
+        }
+    </style>
+
 </head>
+
 <body>
-this is my first webpage. I am learning HTML and this is my first attempt at creating a webpage. I am excited to learn more and improve my skills in web development.
+
+    <h1>My Colour Card</h1>
+
+    <!-- Inline CSS: Add style="color: ____;" inside this p tag -->
+    <p style="color: crimson;">Hi! This is my very own webpage.</p>
+
+    <div id="my-card">
+
+        <h2>About Me</h2>
+        <p class="my-detail">My name is Sa.</p>
+        <p class="my-detail">My favourite colour is red.</p>
+        <p class="my-detail">My favourite subject is Maths.</p>
+        <p class="my-detail">My favourite food is pasta.</p>
+
+    </div>
+
+    <h2>My Favourite Things</h2>
+    <p>My favourite animal is a horse.</p>
+    <p>My favourite sport is swimming.</p>
+    <p>My favourite tv show is Young Sheldon.</p>
+
 </body>
+
 </html>
