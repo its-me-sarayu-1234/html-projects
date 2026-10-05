@@ -1,70 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Colour Card</title>
-
+    <title>My Food Menu</title>
     <style>
-        /* Universal Selector - applies to everything on the page */
-        * {
-            font-size: 16px;
-        }
-
-        /* Element Selectors */
         body {
-            background-color: lemonchiffon;
+            font-family: Arial;
+            background: #fff8f0;
+            padding: 30px;
+            text-align: center;
         }
 
         h1 {
-            color: darkblue;
+            color: #e65c00;
         }
 
-        h2 {
-            color: darkorange;
+        /* Sibling Selector - styles the paragraph right after h1 */
+        h1+p {
+            background: #ffe0b2;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: #bf360c;
+            display: inline-block;
         }
 
-        p {
-            color: darkred;
+        ul {
+            padding: 0;
+            margin-top: 20px;
         }
 
-        /* Class Selector */
-        .my-detail {
-            color: darkgreen;
+        /* Child Selector - styles only direct li children of ul */
+        ul>li {
+            list-style: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: #5d4037;
+            padding: 10px 20px;
+            margin: 6px auto;
+            width: 260px;
+            background: #fff3e0;
+            border-radius: 8px;
+        }
+
+        /* nth-child - highlights the 3rd item as Chef's Special */
+        ul li:nth-child(3) {
+            background: #ffe082;
+            color: #e65c00;
+        }
+
+        .desc {
+            color: #555;
+            margin-top: 20px;
+            font-size: 15px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* first-letter - makes the first letter big and bold */
+        .desc::first-letter {
+            font-size: 220%;
+            color: #e65c00;
             font-weight: bold;
         }
 
-        /* ID Selector */
-        #my-card {
-            background-color: lightturquoise;
+        .links {
+            margin-top: 25px;
+        }
+
+        /* Hover Effect - links glow when mouse moves over them */
+        a {
+            color: #e65c00;
+            text-decoration: none;
+            font-size: 15px;
+            margin: 0 12px;
+            padding: 8px 18px;
+            border: 2px solid #e65c00;
+            border-radius: 8px;
+        }
+
+        a:hover {
+            background: #e65c00;
+            color: white;
         }
     </style>
-
 </head>
 
 <body>
+    <h1>My Food Menu</h1>
+    <p>Pick your favourite dish and dig in!</p>
 
-    <h1>My Colour Card</h1>
+    <ul>
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Tacos — Chef's Special!</li>
+        <li>Noodles</li>
+        <li>Ice Cream</li>
+    </ul>
 
-    <!-- Inline CSS: Add style="color: ____;" inside this p tag -->
-    <p style="color: crimson;">Hi! This is my very own webpage.</p>
+    <p class="desc">Every dish on this menu is made with love and
+        loads of flavour. Try them all and find your favourite!</p>
 
-    <div id="my-card">
-
-        <h2>About Me</h2>
-        <p class="my-detail">My name is Sa.</p>
-        <p class="my-detail">My favourite colour is red.</p>
-        <p class="my-detail">My favourite subject is Maths.</p>
-        <p class="my-detail">My favourite food is pasta.</p>
-
+    <div class="links">
+        <a href="#">Order Now</a>
+        <a href="#">See More</a>
     </div>
-
-    <h2>My Favourite Things</h2>
-    <p>My favourite animal is a horse.</p>
-    <p>My favourite sport is swimming.</p>
-    <p>My favourite tv show is Young Sheldon.</p>
-
 </body>
 
 </html>
