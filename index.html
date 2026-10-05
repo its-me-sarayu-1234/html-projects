@@ -2,108 +2,169 @@
 <html>
 
 <head>
-    <title>My Food Menu</title>
+    <title>My Ice Cream Shop Menu</title>
     <style>
         body {
-            font-family: Arial;
-            background: #fff8f0;
-            padding: 30px;
+            font-family: Arial, sans-serif;
+            background-color: #fff4f8;
             text-align: center;
+            color: #4a2c2a;
         }
 
         h1 {
-            color: #e65c00;
+            color: #d63384;
+            font-size: 36px;
         }
 
-        /* Sibling Selector - styles the paragraph right after h1 */
         h1+p {
-            background: #ffe0b2;
-            padding: 10px 20px;
-            border-radius: 8px;
-            color: #bf360c;
-            display: inline-block;
+            color: #8a2be2;
+            font-weight: bold;
+            background-color: #ffe3f1;
+            border-radius: 10px;
+        }
+
+        .shop-description::first-letter {
+            font-size: 36px;
+            color: #ff1493;
+            font-weight: bold;
+        }
+
+        .menu-box {
+            width: 420px;
+            background-color: white;
+            border: 3px solid #ff69b4;
+            border-radius: 15px;
+            margin: 20px auto;
+            padding: 20px;
         }
 
         ul {
             padding: 0;
-            margin-top: 20px;
         }
 
-        /* Child Selector - styles only direct li children of ul */
         ul>li {
             list-style: none;
+            background-color: #fff0f5;
+            color: #5c2a4a;
             font-size: 18px;
             font-weight: bold;
-            color: #5d4037;
-            padding: 10px 20px;
-            margin: 6px auto;
-            width: 260px;
-            background: #fff3e0;
-            border-radius: 8px;
+            margin: 10px;
+            padding: 12px;
+            border-radius: 10px;
+            border: 2px solid #ffb6c1;
         }
 
-        /* nth-child - highlights the 3rd item as Chef's Special */
-        ul li:nth-child(3) {
-            background: #ffe082;
-            color: #e65c00;
+        ul>li:nth-child(3) {
+            background-color: #fff3cd;
+            color: #b85c00;
+            border: 3px solid #ffa500;
         }
 
-        .desc {
-            color: #555;
-            margin-top: 20px;
-            font-size: 15px;
-            max-width: 400px;
-            margin-left: auto;
-            margin-right: auto;
+        ul>li:hover {
+            background-color: #ff69b4;
+            color: white;
+            cursor: pointer;
+            transform: scale(1.05);
         }
 
-        /* first-letter - makes the first letter big and bold */
-        .desc::first-letter {
-            font-size: 220%;
-            color: #e65c00;
+        button {
+            background-color: #d63384;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 12px 24px;
+            font-size: 16px;
             font-weight: bold;
         }
 
-        .links {
-            margin-top: 25px;
-        }
-
-        /* Hover Effect - links glow when mouse moves over them */
-        a {
-            color: #e65c00;
-            text-decoration: none;
-            font-size: 15px;
-            margin: 0 12px;
-            padding: 8px 18px;
-            border: 2px solid #e65c00;
-            border-radius: 8px;
-        }
-
-        a:hover {
-            background: #e65c00;
-            color: white;
+        button:hover {
+            background-color: #8a2be2;
         }
     </style>
 </head>
 
 <body>
-    <h1>My Food Menu</h1>
-    <p>Pick your favourite dish and dig in!</p>
+    <h1>My Ice Cream Shop Menu</h1>
+    <p>Welcome to Scoops of Joy!</p>
+    <p class="shop-description">
+        We serve colourful, creamy, and delicious ice cream flavours.
+    </p>
+    <div class="menu-box">
+        <h2>Today's Ice Cream Flavours</h2>
+        <ul>
+            <li>Chocolate Delight</li>
+            <li>Strawberry Swirl</li>
+            <li>Mango Magic - Today's Special</li>
+            <li>Vanilla Dream</li>
+            <li>Blueberry Blast</li>
+            <li>Minty Fresh</li>
+            <li>Caramel Crunch</li>
+            <li>Cookie Dough</li>
+            <li>Peach Paradise</li>
+            <li>Raspberry Ripple</li>
+            <li>Banana Bonanza</li>
+            <li>Pistachio Pleasure</li>
+            <li>Cherry Cheesecake</li>
+            <li>Hazelnut Heaven</li>
+            <li>Blackberry Bliss</li>
+            <li>Gingerbread Joy</li>
+            <li>Toffee Temptation</li>
+            <li>Almond Amour</li>
+            <li>Coconut Cream</li>
+            <li>Espresso Ecstasy</li>
+            
+        <h2>Make your own</h2>
+        <p>Choose your base flavour and add toppings!</p>
+        <h3>Base Flavours</h3>
+        <li>Chocolate</li>
+        <li>Vanilla</li>
+        <li>Strawberry</li>
+        <li>Mango</li>
+        
+        <h3>Toppings</h3>
+        <li>Sprinkles</li>
+        <li>Chocolate Chips</li>
+        <li>Caramel Sauce</li>
+        <li>Whipped Cream</li>
+        <li>Chopped Nuts</li>
 
-    <ul>
-        <li>Pizza</li>
-        <li>Burger</li>
-        <li>Tacos — Chef's Special!</li>
-        <li>Noodles</li>
-        <li>Ice Cream</li>
-    </ul>
+        <h3>Cup Sizes</h3>
+        <li>Small</li>
+        <li>Medium</li>
+        <li>Large</li>
+        <li>Extra Large</li>
+        <li>Family Size</li>
+        <li>Party Pack</li>
+        
+        <h2>Special Offers</h2>
+        <li>Buy 1 Get 1 Free on Tuesdays</li>
+        <li>Free Topping on Wednesdays</li>
+        <li>20% Off on Fridays</li>
 
-    <p class="desc">Every dish on this menu is made with love and
-        loads of flavour. Try them all and find your favourite!</p>
-
-    <div class="links">
-        <a href="#">Order Now</a>
-        <a href="#">See More</a>
+        <h2>Milkshakes</h2>
+        <li>Chocolate Milkshake</li>
+        <li>Strawberry Milkshake</li>
+        <li>Vanilla Milkshake</li>
+        <li>Mango Milkshake</li>
+        <li>Oreo Milkshake</li>
+        
+        <h2>Sundaes</h2>
+        <li>Hot Fudge Sundae</li>
+        <li>Caramel Sundae</li>
+        <li>Banana Split</li>
+        <li>Strawberry Shortcake Sundae</li>
+        
+        <h2>Ice Cream Cakes</h2>
+        <li>Chocolate Fudge Cake</li>
+        <li>Strawberry Cheesecake Cake</li>
+        <li>Cookies and Cream Cake</li>
+        
+        <h2>Ice Cream Sandwiches</h2>
+        <li>Chocolate Chip Cookie Sandwich</li>
+        <li>Oreo Cookie Sandwich</li>
+        <li>Peanut Butter Cookie Sandwich</li>
+        </ul>
+        <button>Order Now</button>
     </div>
 </body>
 
