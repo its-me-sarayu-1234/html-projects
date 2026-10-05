@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Ice Cream Shop Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff4f8;
+            text-align: center;
+            color: #4a2c2a;
+        }
+
+        h1 {
+            color: #d63384;
+            font-size: 36px;
+        }
+
+        h1+p {
+            color: #8a2be2;
+            font-weight: bold;
+            background-color: #ffe3f1;
+            border-radius: 10px;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .shop-description::first-letter {
+            font-size: 36px;
+            color: #ff1493;
+            font-weight: bold;
+        }
+
+        .menu-box {
+            width: 420px;
+            background-color: white;
+            border: 3px solid #ff69b4;
+            border-radius: 15px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        ul>li {
+            list-style: none;
+            background-color: #fff0f5;
+            color: #5c2a4a;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px;
+            padding: 12px;
+            border-radius: 10px;
+            border: 2px solid #ffb6c1;
+            transition: all 0.2s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        ul>li:nth-child(3) {
+            background-color: #fff3cd;
+            color: #b85c00;
+            border: 3px solid #ffa500;
+        }
+
+        ul>li:hover {
+            background-color: #ff69b4;
+            color: white;
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+
+        /* Styling for selected menu items */
+        ul>li.selected {
+            background-color: #ff1493 !important;
+            color: white !important;
+            border-color: #d63384 !important;
+        }
+
+        ul>li.selected::after {
+            content: " ✓";
+            font-weight: bold;
+        }
+
+        /* Cart Section Styling */
+        .cart-section {
+            margin: 30px 10px 20px 10px;
+            padding: 15px;
+            background-color: #fff0f5;
+            border: 2px dashed #d63384;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .cart-section h3 {
+            margin-top: 0;
+            color: #d63384;
+            text-align: center;
+            border-bottom: 1px solid #ffb6c1;
+            padding-bottom: 5px;
+        }
+
+        .cart-items-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-height: 150px;
+            overflow-y: auto;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 8px 12px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #5c2a4a;
+            border: 1px solid #ffb6c1;
+        }
+
+        .remove-btn {
+            color: #ff1493;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 0 5px;
+        }
+
+        .empty-message {
+            color: #8a2be2;
+            font-style: italic;
+            text-align: center;
+        }
+
+        button {
+            background-color: #d63384;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #8a2be2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Ice Cream Shop Menu</h1>
+    <p>Welcome to Scoops of Joy!</p>
+    <div>
+        <p class="shop-description">
+            We serve colourful, creamy, and delicious ice cream flavours.
+        </p>
+    </div>
+
+    <div class="menu-box">
+        <h2>Today's Ice Cream Flavours</h2>
+        <ul>
+            <li>Chocolate Delight</li>
+            <li>Strawberry Swirl</li>
+            <li>Mango Magic - Today's Special</li>
+            <li>Vanilla Dream</li>
+            <li>Blueberry Blast</li>
+            <li>Minty Fresh</li>
+            <li>Caramel Crunch</li>
+            <li>Cookie Dough</li>
+            <li>Peach Paradise</li>
+            <li>Raspberry Ripple</li>
+            <li>Banana Bonanza</li>
+            <li>Pistachio Pleasure</li>
+            <li>Cherry Cheesecake</li>
+            <li>Hazelnut Heaven</li>
+            <li>Blackberry Bliss</li>
+            <li>Gingerbread Joy</li>
+            <li>Toffee Temptation</li>
+            <li>Almond Amour</li>
+            <li>Coconut Cream</li>
+            <li>Espresso Ecstasy</li>
+        </ul>
+
+        <h2>Make your own</h2>
+        <p>Choose your base flavour and add toppings!</p>
+
+        <h3>Base Flavours</h3>
+        <ul>
+            <li>Chocolate</li>
+            <li>Vanilla</li>
+            <li>Strawberry</li>
+            <li>Mango</li>
+        </ul>
+
+        <h3>Toppings</h3>
+        <ul>
+            <li>Sprinkles</li>
+            <li>Chocolate Chips</li>
+            <li>Caramel Sauce</li>
+            <li>Whipped Cream</li>
+            <li>Chopped Nuts</li>
+        </ul>
+
+        <h3>Cup Sizes</h3>
+        <ul>
+            <li>Small</li>
+            <li>Medium</li>
+            <li>Large</li>
+            <li>Extra Large</li>
+            <li>Family Size</li>
+            <li>Party Pack</li>
+        </ul>
+
+        <h2>Special Offers</h2>
+        <ul>
+            <li>Buy 1 Get 1 Free on Tuesdays</li>
+            <li>Free Topping on Wednesdays</li>
+            <li>20% Off on Fridays</li>
+        </ul>
+
+        <h2>Milkshakes</h2>
+        <ul>
+            <li>Chocolate Milkshake</li>
+            <li>Strawberry Milkshake</li>
+            <li>Vanilla Milkshake</li>
+            <li>Mango Milkshake</li>
+            <li>Oreo Milkshake</li>
+        </ul>
+
+        <h2>Sundaes</h2>
+        <ul>
+            <li>Hot Fudge Sundae</li>
+            <li>Caramel Sundae</li>
+            <li>Banana Split</li>
+            <li>Strawberry Shortcake Sundae</li>
+        </ul>
+
+        <h2>Ice Cream Cakes</h2>
+        <ul>
+            <li>Chocolate Fudge Cake</li>
+            <li>Strawberry Cheesecake Cake</li>
+            <li>Cookies and Cream Cake</li>
+        </ul>
+
+        <h2>Ice Cream Sandwiches</h2>
+        <ul>
+            <li>Chocolate Chip Cookie Sandwich</li>
+            <li>Oreo Cookie Sandwich</li>
+            <li>Peanut Butter Cookie Sandwich</li>
+        </ul>
+
+        <!-- CART CONTAINER -->
+        <div class="cart-section">
+            <h3>🛒 Your Cart</h3>
+            <div id="cartContainer" class="empty-message">Your cart is empty</div>
+            <ul id="cartItemsList" class="cart-items-list"></ul>
+        </div>
+
+        <button id="orderBtn">Order Now</button>
+    </div>
+
+    <script>
+        const listItems = document.querySelectorAll('ul:not(.cart-items-list) li');
+        const orderButton = document.getElementById('orderBtn');
+        const cartContainer = document.getElementById('cartContainer');
+        const cartItemsList = document.getElementById('cartItemsList');
+
+        // Assign dynamic references to layout elements
+        listItems.forEach((item, index) => {
+            item.setAttribute('data-id', 'item-' + index);
+
+            item.addEventListener('click', () => {
+                item.classList.toggle('selected');
+                updateCart();
+            });
+        });
+
+        // Handle interactive cart array rendering
+        function updateCart() {
+            cartItemsList.innerHTML = '';
+            const selectedItems = document.querySelectorAll('ul:not(.cart-items-list) li.selected');
+
+            if (selectedItems.length === 0) {
+                cartContainer.style.display = 'block';
+                return;
+            }
+
+            cartContainer.style.display = 'none';
+
+            selectedItems.forEach(item => {
+                const cleanText = item.textContent.replace(' ✓', '').trim();
+                const itemId = item.getAttribute('data-id');
+
+                const li = document.createElement('li');
+                li.className = 'cart-item';
+                li.innerHTML = `
+          <span>${cleanText}</span>
+          <span class="remove-btn" onclick="removeItem('${itemId}', event)">❌</span>
+        `;
+
+                cartItemsList.appendChild(li);
+            });
+        }
+
+        // Dynamic cart cleanup hook 
+        window.removeItem = function (id, event) {
+            if (event) event.stopPropagation(); // Avoid triggering unexpected event bubble actions
+            const menuItem = document.querySelector(`[data-id="${id}"]`);
+            if (menuItem) {
+                menuItem.classList.remove('selected');
+                updateCart();
+            }
+        };
+
+        // Alert transaction log summary on final action trigger
+        orderButton.addEventListener('click', () => {
+            const selectedItems = document.querySelectorAll('ul:not(.cart-items-list) li.selected');
+
+            if (selectedItems.length === 0) {
+                alert("You haven't selected any items yet!");
+                return;
+            }
+
+            let orderList = [];
+            selectedItems.forEach(item => {
+                orderList.push(item.textContent.replace(' ✓', '').trim());
+            });
+
+            alert("🎉 Order Confirmed! 🎉\n\nItems sent to kitchen:\n" + orderList.join("\n"));
+        });
+    </script>
+</body>
+
+</html>
+
+    
+
+    
+
+
+            
+    
+
+
+
