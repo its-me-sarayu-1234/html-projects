@@ -1,70 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <title>My Restaurant Menu Card</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Colour Card</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
 
-    <style>
-        /* Universal Selector - applies to everything on the page */
-        * {
-            font-size: 16px;
-        }
+            body {
+                font-family: georgia, serif;
+                background-color: #fff8e7;
+                color: #3b2f2f;
+            }
 
-        /* Element Selectors */
-        body {
-            background-color: lemonchiffon;
-        }
+            .menu-card {
+                width: 600px;
+                border: 3px solid #8B4513;
+                border-radius: 15PX;
+                background-color: #ffffff;
+                box-shadow: 0 0 20px #8b4513;
+            }
 
-        h1 {
-            color: darkblue;
-        }
+            .restaurant-name {
+                font-size: 42px;
+                font-weight: bold;
+                color: #8b0000;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                text-shadow: 2px 2px 4px #d2b48c;
+            }
 
-        h2 {
-            color: darkorange;
-        }
+            .tagline {
+                font-size: 18px;
+                font-style: italic;
+                text-align: center;
+                color: #6b4226;
+                text-decoration: underline;
+            }
 
-        p {
-            color: darkred;
-        }
+            .menu-section {
+                border: 2px solid #d2b48c;
+                box-shadow: 0 0 8px #d2b48c;
+            }
 
-        /* Class Selector */
-        .my-detail {
-            color: darkgreen;
-            font-weight: bold;
-        }
+            .section-title {
+                font-size: 26px;
+                color: #a0522d;
+                text-transform: capitalize;
+            }
 
-        /* ID Selector */
-        #my-card {
-            background-color: lightturquoise;
-        }
-    </style>
+            .dish-name:hover {
+                transform: scale(1.1);
+            }
 
-</head>
+            .dish-description {
+                font-size: 15px;
+                line-height: 1.6;
+                text-indent: 30px;
+                color: #555555;
+            }
+
+            .special-offer {
+                font-size: 22px;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #b22222;
+                text-align: center;
+                text-transform: uppercase;
+                text-shadow: 2px 2px 3px #000000;
+                box-shadow: 0 0 12px #b22222;
+                transform: rotate(-2deg);
+            }
+        </style>
+    </head>
 
 <body>
-
-    <h1>My Colour Card</h1>
-
-    <!-- Inline CSS: Add style="color: ____;" inside this p tag -->
-    <p style="color: crimson;">Hi! This is my very own webpage.</p>
-
-    <div id="my-card">
-
-        <h2>About Me</h2>
-        <p class="my-detail">My name is Sa.</p>
-        <p class="my-detail">My favourite colour is red.</p>
-        <p class="my-detail">My favourite subject is Maths.</p>
-        <p class="my-detail">My favourite food is pasta.</p>
-
+    <div class="menu-card">
+        <h1 class="restaurant-name">Gourmet Delights</h1>
+        <p class="tagline">Where Taste Meets Elegance</p>
+        <div class="menu-section">
+            <h2 class="section-title">Appetizers</h2>
+            <p class="dish-name">Bruschetta</p>
+            <p class="dish-description">Grilled bread topped with fresh tomatoes, garlic, and basil, drizzled with balsamic glaze.</p>
+            <p class="dish-name">Stuffed Mushrooms</p>
+            <p class="dish-description">Mushrooms filled with a savory mixture of cheese, herbs, and breadcrumbs, baked to perfection.</p>
+        </div>
+        <div class="menu-section">
+            <h2 class="section-title">Main Courses</h2>
+            <p class="dish-name">Grilled Salmon</p>
+            <p class="dish-description">Fresh salmon fillet grilled and served with a lemon butter sauce, accompanied by seasonal vegetables.</p>
+            <p class="dish-name">Ribeye Steak</p>
+            <p class="dish-description">Juicy ribeye steak cooked to your preference, served with garlic mashed potatoes and sautéed asparagus.</p>
+            <p class="special-offer">Chef's Special: Lobster Thermidor</p>
+            <p class="dish-description">Succulent lobster meat cooked in a creamy wine sauce, topped with cheese and baked to golden perfection.</p>
+            <p class="dish-name">Chicken Parmesan</p>
+            <p class="dish-description">Breaded chicken breast topped with marinara sauce and melted mozzarella, served with garlic bread.</p>  
+            <p class="dish-name">Vegetarian Lasagna</p>
+            <p class="dish-description">Layers of pasta, ricotta cheese, spinach, and marinara sauce, baked to perfection and served with a side salad.</p>
+            <p class="dish-name">Seafood Paella</p>
+            <p class="dish-description">A traditional Spanish dish with saffron-infused rice, shrimp, mussels, and calamari, garnished with fresh herbs and lemon wedges.</p>
+            <p class="dish-name">Beef Wellington</p>
+            <p class="dish-description">Tender beef fillet coated with mushroom duxelles and wrapped in puff pastry, baked to a golden brown and served with a rich red wine sauce.</p>
+            <p class="dish-name">Eggplant Parmesan</p>
+            <p class="dish-description">Layers of breaded eggplant, marinara sauce, and melted mozzarella cheese, baked to perfection and served with a side of spaghetti.</p>  
+            <p class="dish-name">Lamb Chops</p>
+            <p class="dish-description">Grilled lamb chops seasoned with rosemary and garlic, served with roasted potatoes and a mint yogurt sauce.</p>
+            <p class="dish-name">Shrimp Scampi</p>
+            <p class="dish-description">Sautéed shrimp in a garlic butter and white wine sauce, served over linguine pasta with a sprinkle of fresh parsley.</p>
+            <p class="dish-name">Mushroom Risotto</p>
+            <p class="dish-description">Creamy risotto cooked with arborio rice, wild mushrooms, and Parmesan cheese, finished with a touch of truffle oil for an earthy flavor.</p>
+            <p class="dish-name">Duck à l'Orange</p>
+            <p class="dish-description">Roasted duck breast served with a tangy orange sauce, accompanied by roasted root vegetables and a side of wild rice pilaf.</p>
+            <p class="dish-name">Pasta Primavera</p>
+            <p class="dish-description">A medley of fresh seasonal vegetables sautéed with garlic and olive oil, tossed with al dente pasta and finished with a sprinkle of Parmesan cheese.</p>
+            <p class="dish-name">Seafood Risotto</p>
+            <p class="dish-description">Creamy risotto cooked with a variety of fresh seafood, including shrimp, scallops, and mussels, finished with a touch of saffron for a rich flavor and vibrant color.</p>
+            <p class="dish-name">Stuffed Bell Peppers</p>
+            <p class="dish-description">Bell peppers filled with a savory mixture of ground beef, rice, and herbs, baked to perfection and served with a tomato sauce.</p>
+            <p class="dish-name">Chicken Marsala</p>
+            <p class="dish-description">Tender chicken breasts sautéed with mushrooms and simmered in a rich Marsala wine sauce, served with a side of creamy mashed potatoes.</p>
+            <p class="dish-name">Vegetable Stir-Fry</p>
+            <p class="dish-description">A colorful assortment of fresh vegetables stir-fried with garlic, ginger, and soy sauce, served over steamed jasmine rice for a light and healthy option.</p>
+            <p class="dish-name">Beef Stroganoff</p>
+            <p class="dish-description">Tender strips of beef cooked in a creamy mushroom sauce, served over egg noodles and garnished with fresh parsley for a comforting and hearty meal.</p>
+            <p class="dish-name">Seafood Linguine</p>
+            <p class="dish-description">Linguine pasta tossed with a medley of fresh seafood, including shrimp, clams, and calamari, in a light garlic and white wine sauce, finished with a sprinkle of fresh herbs and Parmesan cheese.</p>
+            <p class="dish-name">Vegetarian Quiche</p>
+            <p class="dish-description">A savory quiche filled with a mixture of eggs, cheese, and fresh vegetables, baked to golden perfection and served with a side salad for a light and satisfying meal.</p>
+            <p class="dish-name">Grilled Vegetable Platter</p>
+            <p class="dish-description">A colorful assortment of seasonal vegetables grilled to perfection, served with a balsamic glaze and a side of herbed couscous for a healthy and flavorful option.</p>
+            <p class="dish-name">Lobster Bisque</p>
+            <p class="dish-description">A rich and creamy soup made with fresh lobster, simmered with aromatic vegetables and finished with a touch of sherry for a luxurious and indulgent appetizer.</p>
+            <p class="dish-name">Caprese Salad</p>
+            <p class="dish-description">A classic Italian salad made with fresh mozzarella, ripe tomatoes, and fragrant basil, drizzled with extra virgin olive oil and balsamic reduction for a refreshing and light starter.</p>
+            <p class="dish-name">Chocolate Lava Cake</p>
+            <p class="dish-description">A decadent dessert with a warm, gooey chocolate center, served with a scoop of vanilla ice cream and a drizzle of raspberry sauce for a perfect ending to your meal.</p>
+            <p class="dish-name">Tiramisu</p>
+            <p class="dish-description">A classic Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder, chilled to perfection for a rich and creamy treat.</p>
+            <p class="dish-name">Crème Brûlée</p>
+            <p class="dish-description">A creamy custard dessert topped with a layer of caramelized sugar, served with fresh berries for a delightful and elegant finish to your dining experience.</p>
+        </div>
+        <p class="Special Offer">Special Offer: Get 20% off on all desserts!</p>
     </div>
-
-    <h2>My Favourite Things</h2>
-    <p>My favourite animal is a horse.</p>
-    <p>My favourite sport is swimming.</p>
-    <p>My favourite tv show is Young Sheldon.</p>
-
 </body>
-
-</html>
+    </html>
