@@ -1,107 +1,163 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Fitness Routine</title>
 
-        <style>
-            body {
-                font-family: arial, sans-serif;
-                background-color: #f2f7f4;
-                color: #222222;
-            }
+<head>
+    <title>Zoo Rescue Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1fff0;
+            padding: 25px;
+            padding-top: 70px;
+            min-height: 1200px;
+        }
 
-            h1 {
-                text-align: center;
-                color: darkgreen;
-            }
+        h1,
+        h2 {
+            color: #2d6a4f;
+        }
 
-            .intro {
-                width: 800px;
-                margin: 20px auto;
-                padding: 15px;
-                border: 2px solid darkgreen;
-                background-color: #ffffff;
-            }
+        h1 {
+            text-align: center;
+        }
 
-            .routine-card {
-                width: 250 px;
-                height: 260px;
-                float: left;
-                margin: 20px;
-                padding: 18px;
-                border: 3px solid seagreen;
-                background-color: #ffffff;
-            }
+        .alert {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #2d6a4f;
+            color: white;
+            padding: 14px;
+            text-align: center;
+            font-weight: bold;
+        }
 
-            .routine-card h2 {
-                color: darkblue;
-                font-size: 22px;
-            }
+        .animal {
+            background: #d8f3dc;
+            border: 2px solid #2d6a4f;
+            padding: 10px;
+            margin: 8px 0;
+            width: 220px;
+        }
 
-            .routine-card p {
-                font-size: 15px;
-                line-height: 1.5;
-            }
+        .moved {
+            position: relative;
+            left: 35px;
+            background: #95d5b2;
+        }
 
-            .time {
-                font-weight: bold;
-                color: darkred;
-            }
+        .card {
+            position: relative;
+            background: white;
+            border: 2px solid #52b788;
+            border-radius: 10px;
+            padding: 25px;
+            width: 230px;
+            text-align: center;
+        }
 
-            .clear-section {
-                clear: both;
-            }
+        .tag {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #f77f00;
+            color: white;
+            padding: 6px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
 
-            .note {
-                width: 800px;
-                margin: 20px auto;
-                padding: 15px;
-                border: 2px dashed orange;
-                background-color: #fff8e1;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>My Fitness Routine</h1>
+        .zone {
+            position: sticky;
+            top: 50px;
+            background: #2d6a4f;
+            color: white;
+            padding: 10px;
+            margin-top: 25px;
+            font-weight: bold;
+        }
 
-        <div class="intro">
-            <p>Welcome to my fitness routine! Below you'll find a structured plan that I follow to stay healthy and active. Each section outlines different exercises and their respective times. Follow the guidelines and adjust the intensity as needed. I hope you find this routine helpful in achieving your fitness goals.</p>
-        </div>
+        .case {
+            background: white;
+            border: 2px solid #52b788;
+            padding: 10px;
+            margin: 8px 0;
+            width: 230px;
+            border-radius: 8px;
+        }
 
-        <div class="routine-card">
-            <h2>Cardio</h2>
-            <p class="time">Time: 30 minutes</p>
-            <p>Engage in activities like running, cycling, or swimming to improve cardiovascular health. Always warm up before exercising and cool down afterwards. Work at a moderate intensity for the best results.</p>
-        </div>
+        code {
+            background: #d8f3dc;
+            color: #1b4332;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
 
-        <div class="routine-card">
-            <h2>Strength Training</h2>
-            <p class="time">Time: 45 minutes</p>
-            <p>Focus on exercises like weight lifting, resistance bands, or bodyweight exercises to build muscle strength. Always warm up before exercising and cool down afterwards. Quality over quantity!</p>
-        </div>
+<body>
 
-        <div class="routine-card">
-            <h2>Core Workouts</h2>
-            <p class="time">Time: 25 minutes</p>
-            <p>Incorporate exercises like planks, crunches, and leg raises to strengthen your core muscles. Try to hold each exercise for as long as possible while maintaining proper form. With consistent practice, you'll see improvements in your core strength and stability.</p>
-        </div>
+    <div class="alert">Zoo Rescue Alert - Emergency team active | Fixed</div>
 
-        <div class="routine-card">
-            <h2>Balance Training</h2>
-            <p class="time">Time: 15 minutes</p>
-            <p>Practice exercises that improve balance and stability, such as single-leg stands or balance board exercises. While performing these exercises, focus on maintaining proper form and control. Warm up before exercising and cool down afterwards. When you're ready, you can increase the difficulty of the exercises.</p>
-        </div>
+    <h1>Zoo Rescue Tracker</h1>
+    <p style="text-align:center;">
+    </p>
 
-        <div class="routine-card">
-            <h2>Flexibility</h2>
-            <p class="time">Time: 20 minutes</p>
-            <p>Incorporate stretching routines or yoga to enhance flexibility and prevent injuries. Warm up before exercising and cool down afterwards. Balance your training with adequate rest periods. If you experience any pain or discomfort, stop the exercise and consult a healthcare professional.</p>
-        </div>
+    <h2>Stats</h2>
+    <div class="animal">Lion - Resting zone</div>
+    <div class="animal">Elephant - Water zone</div>
+    <div class="animal">Penguin - Ice zone</div>
 
-        <div class="clear-section"></div>
+    <h2>Pending</h2>
+    <p>Keep observing the Koala carefuly.</p>
+    <div class="animal">Giraffe - Checkup pending</div>
+    <div class="animal moved">Rescued Koala - Safe</div>
+    <div class="animal">Zebra - Feeding zone</div>
 
-        <div class="note">
-            <p><strong>Note:</strong> Always consult with a fitness professional before starting any new exercise routine. Listen to your body and adjust the intensity as needed.</p>
-        </div>
-    </body>
+    <h2>Complete</h2>
+    <div class="card">
+        Panda<br>
+        Medical check complete
+        <div class="tag">Safe</div>
+    </div>
+
+    
+
+    <h2>All Animals</h2>
+    <p>Stats of all the animals being treated.</p>
+
+    <div class="zone">Rescue Zone Cases</div>
+
+    <div class="case">Tiger - Observation</div>
+    <div class="case">Deer - Released</div>
+    <div class="case">Owl - Night care</div>
+    <div class="case">Turtle - Shell treatment</div>
+    <div class="case">Rabbit - Healthy</div>
+    <div class="case">Flamingo - Wing check</div>
+    <div class="case">Monkey - Play area</div>
+    <div class="case">Horse - Recovery stable</div>
+    <div class="case">Llama - Observation</div>
+    <div class="case">Fox - Recovery care</div>
+    <div class="case">Parrot - Wing check</div>
+    <div class="case">Otter - Water therapy</div>
+    <div class="case">Meerkat - Observation</div>
+    <div class="case">Cheetah - Resting area</div>
+    <div class="case">Elephant - Foot care</div>
+    <div class="case">Penguin - Feather check</div>
+    <div class="case">Giraffe - Feeding time</div>
+    <div class="case">Kangaroo - Recovery area</div>
+    <div class="case">Seal - Pool therapy</div>
+    <div class="case">Hedgehog - Health check</div>
+    <div class="case">Macaw - Beak care</div>
+    <div class="case">Bison - Open pasture</div>
+    <div class="case">Sloth - Resting habitat</div>
+    <div class="case">Rhinoceros - Skin treatment</div>
+    
+
+    <small>For authorised staff </small><large>ONLY</large>
+
+</body>
+
 </html>
