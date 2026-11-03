@@ -2,80 +2,172 @@
 <html>
 
 <head>
-    <title>School Club Website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adventure Park Challenge</title>
 
-    <!-- STEP 1 - Bootstrap CSS link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <style>
         body {
-            background-color: #f9f9f9;
+            background-color: #102018;
+            color: #f0f0f0;
             font-family: Arial, sans-serif;
-            padding: 30px 15px;
+            text-align: center;
+            padding: 30px;
         }
 
         h1 {
-            text-align: center;
-            color: #FF5A43;
+            color: #ffcc33;
         }
 
-        .club-card {
-            text-align: center;
-            border: 2px solid #FF5A43;
+        h2 {
+            color: #ffffff;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #ffffff;
+        }
+
+        small {
+            color: #bbbbbb;
+        }
+
+        dl {
+            text-align: left;
+            display: inline-block;
+        }
+
+        dt {
+            color: #ffcc33;
+            font-weight: bold;
+        }
+
+        dd {
+            color: #dddddd;
+        }
+
+        mark {
+            background-color: #ffcc33;
+            color: #000000;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        code {
+            background-color: #07130d;
+            color: #66ff99;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        abbr {
+            color: #ffcc33;
+            font-weight: bold;
+            cursor: help;
+        }
+
+        pre {
+            background-color: #07130d;
+            color: #66ff99;
+            padding: 15px;
             border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            background-color: #fff8e1;
+            display: inline-block;
+            text-align: left;
         }
 
-        .club-card h3 {
-            color: #FF5A43;
+        blockquote {
+            border-left: 4px solid #ffcc33;
+            padding-left: 15px;
+            color: #cccccc;
+            font-style: italic;
+            display: inline-block;
+            text-align: left;
+        }
+
+        hr {
+            border-color: #2f4f3f;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>My School Clubs</h1>
+    <h1>Welcome to Adventure Park Challenge!</h1>
+    <p>Get ready to explore rides, challenges, and safety missions while learning typography in HTML and Bootstrap.</p>
 
-    <!-- STEP 2 - container keeps the layout neat and centred -->
-    <div class="container">
+    <hr>
 
-        <!-- STEP 3 - row holds all the columns in one horizontal line -->
-        <div class="row">
+    <h2>Adventure Levels</h2>
+    <p class="display-1">Extreme Explorer</p>
+    <p class="display-2">Mountain Rider</p>
+    <p class="display-3">Trail Runner</p>
+    <p class="display-4">New Adventurer</p>
 
-            <!-- STEP 4 - col-12: full width on phones
-                   col-md-6: half width on tablets
-                   col-lg-4: one-third on desktops -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="club-card">
-                    <h3>Coding Club</h3>
-                    <p>I learn how to create websites, games, and simple apps.</p>
-                </div>
-            </div>
+    <hr>
 
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="club-card">
-                    <h3>Science Club</h3>
-                    <p>I enjoy doing experiments and discovering how things work.</p>
-                </div>
-            </div>
+    <h2>Visitor Passes</h2>
+    <h3>Aarav <small>Pass: Extreme Explorer</small></h3>
+    <h3>Mia <small>Pass: Mountain Rider</small></h3>
+    <h3>Zara <small>Pass: Trail Runner</small></h3>
 
-            <div class="col-12 col-md-12 col-lg-4">
-                <div class="club-card">
-                    <h3>Art Club</h3>
-                    <p>I love drawing, painting, and creating colourful designs.</p>
-                </div>
-            </div>
+    <hr>
 
-        </div>
-    </div>
+    <h2>Ride Dictionary</h2>
+    <dl>
+        <dt>Sky Coaster</dt>
+        <dd>A fast ride that takes visitors high above the park.</dd>
 
-    <!-- STEP 5 - Bootstrap JS script -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
-    </script>
+        <dt>Treasure Trail</dt>
+        <dd>A mystery path where visitors solve clues to find treasure.</dd>
+
+        <dt>River Rush</dt>
+        <dd>A water ride that moves quickly through twists and turns.</dd>
+    </dl>
+
+    <hr>
+
+    <h2>Safety Mission</h2>
+    <p>Please report to <mark>Gate 3</mark> before the challenge begins.</p>
+    <p>The rescue drill will happen near <mark>River Zone</mark>.</p>
+
+    <hr>
+
+    <h2>Ride Commands</h2>
+    <p>Start the coaster: <code>ride.start("Sky Coaster")</code></p>
+    <p>Open the trail: <code>trail.open("Treasure Trail")</code></p>
+    <p>Stop the ride: <code>ride.stop("River Rush")</code></p>
+
+    <hr>
+
+    <h2>Park Short Forms</h2>
+    <p><abbr title="Adventure Park Safety Team">APST</abbr> checks every ride before opening.</p>
+    <p><abbr title="River Rescue Unit">RRU</abbr> helps visitors near water rides.</p>
+    <p><abbr title="Junior Explorer Club">JEC</abbr> is for young adventure lovers.</p>
+
+    <hr>
+
+
+    <h2>Daily Challenge Schedule</h2>
+    <pre>
+10:00 AM  -  Gate Entry
+10:30 AM  -  Catpain's Quest
+11:00 AM  -  Sky Coaster
+12:00 PM  -  Treasure Trail
+01:00 PM  -  Lunch Break
+02:00 PM  -  River Rush
+02:30 PM  -  Safety Drill
+03:00 PM  -  Final Adventure Badge
+03:30 PM  -  Award Ceremony
+    </pre>
+
+    <h2>Adventure Quote</h2>
+    <blockquote class="blockquote">
+        <p>"Adventure begins when you try something new."</p>
+        <footer class="blockquote-footer">Adventure Park Team</footer>
+    </blockquote>
 
 </body>
 
