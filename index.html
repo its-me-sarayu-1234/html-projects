@@ -2,161 +2,80 @@
 <html>
 
 <head>
-    <title>Zoo Rescue Tracker</title>
+    <title>My Hobby Cards</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- STEP 1 - Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     <style>
         body {
+            background-color: #f9f9f9;
             font-family: Arial, sans-serif;
-            background: #f1fff0;
-            padding: 25px;
-            padding-top: 70px;
-            min-height: 1200px;
-        }
-
-        h1,
-        h2 {
-            color: #2d6a4f;
+            padding: 30px 15px;
         }
 
         h1 {
             text-align: center;
+            color: #FF5A43;
         }
 
-        .alert {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: #2d6a4f;
-            color: white;
-            padding: 14px;
+        .hobby-card {
             text-align: center;
-            font-weight: bold;
-        }
-
-        .animal {
-            background: #d8f3dc;
-            border: 2px solid #2d6a4f;
-            padding: 10px;
-            margin: 8px 0;
-            width: 220px;
-        }
-
-        .moved {
-            position: relative;
-            left: 35px;
-            background: #95d5b2;
-        }
-
-        .card {
-            position: relative;
-            background: white;
-            border: 2px solid #52b788;
-            border-radius: 10px;
-            padding: 25px;
-            width: 230px;
-            text-align: center;
-        }
-
-        .tag {
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            background: #f77f00;
-            color: white;
-            padding: 6px 10px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .zone {
-            position: sticky;
-            top: 50px;
-            background: #2d6a4f;
-            color: white;
-            padding: 10px;
-            margin-top: 25px;
-            font-weight: bold;
-        }
-
-        .case {
-            background: white;
-            border: 2px solid #52b788;
-            padding: 10px;
-            margin: 8px 0;
-            width: 230px;
+            border: 2px solid #FF5A43;
             border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff8e1;
         }
 
-        code {
-            background: #d8f3dc;
-            color: #1b4332;
-            padding: 2px 5px;
-            border-radius: 4px;
+        .hobby-card h3 {
+            color: #FF5A43;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="alert">Zoo Rescue Alert - Emergency team active | Fixed</div>
+    <h1>My Hobby Cards</h1>
 
-    <h1>Zoo Rescue Tracker</h1>
-    <p style="text-align:center;">
-    </p>
+    <!-- STEP 2 - container keeps the layout neat and centred -->
+    <div class="container">
 
-    <h2>Stats</h2>
-    <div class="animal">Lion - Resting zone</div>
-    <div class="animal">Elephant - Water zone</div>
-    <div class="animal">Penguin - Ice zone</div>
+        <!-- STEP 3 - row holds all the columns in one horizontal line -->
+        <div class="row">
 
-    <h2>Pending</h2>
-    <p>Keep observing the Koala carefuly.</p>
-    <div class="animal">Giraffe - Checkup pending</div>
-    <div class="animal moved">Rescued Koala - Safe</div>
-    <div class="animal">Zebra - Feeding zone</div>
+            <!-- STEP 4 - col-12: full width on phones
+                   col-md-6: half width on tablets
+                   col-lg-4: one-third on desktops -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="hobby-card">
+                    <h3>Drawing</h3>
+                    <p>I love sketching animals and comic characters.</p>
+                </div>
+            </div>
 
-    <h2>Complete</h2>
-    <div class="card">
-        Panda<br>
-        Medical check complete
-        <div class="tag">Safe</div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="hobby-card">
+                    <h3>Football</h3>
+                    <p>I play football every evening with my friends.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="hobby-card">
+                    <h3>Reading</h3>
+                    <p>My favourite books are adventure stories.</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-    
-
-    <h2>All Animals</h2>
-    <p>Stats of all the animals being treated.</p>
-
-    <div class="zone">Rescue Zone Cases</div>
-
-    <div class="case">Tiger - Observation</div>
-    <div class="case">Deer - Released</div>
-    <div class="case">Owl - Night care</div>
-    <div class="case">Turtle - Shell treatment</div>
-    <div class="case">Rabbit - Healthy</div>
-    <div class="case">Flamingo - Wing check</div>
-    <div class="case">Monkey - Play area</div>
-    <div class="case">Horse - Recovery stable</div>
-    <div class="case">Llama - Observation</div>
-    <div class="case">Fox - Recovery care</div>
-    <div class="case">Parrot - Wing check</div>
-    <div class="case">Otter - Water therapy</div>
-    <div class="case">Meerkat - Observation</div>
-    <div class="case">Cheetah - Resting area</div>
-    <div class="case">Elephant - Foot care</div>
-    <div class="case">Penguin - Feather check</div>
-    <div class="case">Giraffe - Feeding time</div>
-    <div class="case">Kangaroo - Recovery area</div>
-    <div class="case">Seal - Pool therapy</div>
-    <div class="case">Hedgehog - Health check</div>
-    <div class="case">Macaw - Beak care</div>
-    <div class="case">Bison - Open pasture</div>
-    <div class="case">Sloth - Resting habitat</div>
-    <div class="case">Rhinoceros - Skin treatment</div>
-    
-
-    <small>For authorised staff </small><large>ONLY</large>
+    <!-- STEP 5 - Bootstrap JS script -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
 
 </body>
 
